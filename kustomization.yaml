@@ -1,0 +1,4 @@
+secretGenerator:
+- name: mysql-pass
+  literals:
+  - password=sample2345passwordhere
