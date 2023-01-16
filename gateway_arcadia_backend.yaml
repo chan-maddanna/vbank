@@ -24,10 +24,10 @@ spec:
   - arcadia-backend-gateway
   http:
   - match:
-    -uri:
+    - uri:
        exact: /files
     route:
-    -destination:
+    - destination:
          host: backend
          port:
            number: 80 

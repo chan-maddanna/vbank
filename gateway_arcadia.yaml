@@ -24,10 +24,10 @@ spec:
   - arcadia-main-gateway
   http:
   - match:
-    -uri:
+    - uri:
        exact: /
     route:
-    -destination:
+    - destination:
          host: arcadia-np-main 
          port:
            number: 80 

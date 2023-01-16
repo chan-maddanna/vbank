@@ -24,10 +24,10 @@ spec:
   - arcadia-app3-gateway
   http:
   - match:
-    -uri:
+    - uri:
        prefix: /app3
     route:
-    -destination:
+    - destination:
          host: arcadia-np-app3
          port:
            number: 80 

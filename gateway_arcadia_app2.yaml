@@ -24,10 +24,10 @@ spec:
   - arcadia-app2-gateway
   http:
   - match:
-    -uri:
+    - uri:
        exact: /api
     route:
-    -destination:
+    - destination:
          host: arcadia-np-app2
          port:
            number: 80 
