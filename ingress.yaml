@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-arcadia
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: k8s.arcadia-finance.io
+    http:
+      paths:
+      - path: /
+          pathType: ImplementationSpecific
+          backend:
+           serviceName: arcadia-np-main
+           servicePort: 80
+      - path: /files
+          pathType: ImplementationSpecific
+          backend:
+           serviceName: aracdia-np-backend
+           servicePort: 80
+      - path: /api
+          pathType: ImplementationSpecific
+          backend:
+           serviceName: arcadia-np-app2
+           servicePort: 80
+      - path: /app3
+          pathType: ImplementationSpecific
+          backend:
+           serviceName: arcadia-np-app3
+           servicePort: 80
+
