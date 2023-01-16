@@ -11,21 +11,28 @@ spec:
       - path: /
         #pathType: ImplementationSpecific
         backend:
-           serviceName: arcadia-np-main
-           servicePort: 80
+          service:
+            name: arcadia-np-main
+            port: 
+              number: 80
       - path: /files
         #pathType: ImplementationSpecific
         backend:
-           serviceName: aracdia-np-backend
-           servicePort: 80
+          service:
+            name: aracdia-np-backend
+            port: 
+              number: 80
       - path: /api
         #pathType: ImplementationSpecific
         backend:
-           serviceName: arcadia-np-app2
-           servicePort: 80
+          service:
+            name: arcadia-np-app2
+            port: 
+              number: 80
       - path: /app3
         #pathType: ImplementationSpecific
         backend:
-           serviceName: arcadia-np-app3
-           servicePort: 80
+           service:
+             name: arcadia-np-app3
+             port: 80
 
