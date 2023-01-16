@@ -1,0 +1,34 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: arcadia-app2-gateway
+spec:
+  selector:
+    istio: ingressgateway # use istio default controller
+  servers:
+  - port:
+      number: 80
+      name: arcadia-np-app2
+      protocol: HTTP
+    hosts:
+    - "*"
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: app2srv
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - arcadia-app2-gateway
+  http:
+  - match:
+    -uri:
+       exact: /api
+    route:
+    -destination:
+         host: arcadia-np-app2
+         port:
+           number: 80 
+
