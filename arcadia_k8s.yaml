@@ -10,7 +10,7 @@ metadata:
     app: arcadia-np-backend
     service: arcadia-np-backend
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 80
     nodePort: 31584
@@ -61,7 +61,7 @@ metadata:
     app: arcadia-np-main
     service: arcadia-np-main
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - name: arcadia-np-main-80
     nodePort: 30511
@@ -114,7 +114,7 @@ metadata:
     app: arcadia-np-app2
     service: arcadia-np-app2
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 80
     name: arcadia-np-app2-80
@@ -165,7 +165,7 @@ metadata:
     app: arcadia-app3
     service: arcadia-np-app3
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 80
     name: arcadia-np-app3-80
