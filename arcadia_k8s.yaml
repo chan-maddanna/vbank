@@ -64,7 +64,7 @@ spec:
   type: NodePort
   ports:
   - name: arcadia-np-main-80
-    nodePort: 31810
+    nodePort: 30511
     port: 80
     protocol: TCP
     targetPort: 80
