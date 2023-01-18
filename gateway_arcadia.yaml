@@ -5,7 +5,7 @@ metadata:
   namespace: arcadia
 spec:
   selector:
-    istio: istio-system/ingressgateway # use istio default controller
+    istio: istio-system/istio-ingressgateway # use istio default controller
   servers:
   - port:
       number: 80
