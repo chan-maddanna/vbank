@@ -61,10 +61,10 @@ metadata:
     app: arcadia-np-main
     service: arcadia-np-main
 spec:
-#  type: LoadBalancer
+  type: NodePort
   ports:
   - name: arcadia-np-main-80
-    nodePort: 30511
+    nodePort: 31810
     port: 80
     protocol: TCP
     targetPort: 80
