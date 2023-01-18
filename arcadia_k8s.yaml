@@ -13,7 +13,7 @@ spec:
 #  type: LoadBalancer
   ports:
   - port: 80
-    nodePort: 31584
+#    nodePort: 31584
     name: arcadia-np-backend-80
   selector:
     app: arcadia-np-backend
@@ -118,7 +118,7 @@ spec:
   ports:
   - port: 80
     name: arcadia-np-app2-80
-    nodePort: 30362
+#    nodePort: 30362
   selector:
     app: arcadia-np-app2
 ---
@@ -169,7 +169,7 @@ spec:
   ports:
   - port: 80
     name: arcadia-np-app3-80
-    nodePort: 31662
+ #   nodePort: 31662
   selector:
     app: arcadia-np-app3
 ---
