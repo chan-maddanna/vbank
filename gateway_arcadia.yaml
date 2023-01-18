@@ -30,7 +30,7 @@ spec:
        prefix: /
     route:
     - destination:
-         host: arcadia-np-main 
+         host: arcadia-np-main-80
          port:
            number: 80 
 
